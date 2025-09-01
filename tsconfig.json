@@ -6,6 +6,10 @@
     "lib": [
       "es2022"
     ],
+    "baseUrl": ".",
+    "paths": {
+			"/opt/shared/*": ["src/dependencies/shared/*"]
+		},
     "declaration": true,
     "strict": true,
     "noImplicitAny": true,
@@ -27,6 +31,8 @@
   },
   "exclude": [
     "node_modules",
-    "cdk.out"
-  ]
+    "cdk.out",
+    "layers/*"
+  ],
+  
 }
